@@ -59,8 +59,6 @@ extern int mytest;
 uint8_t chdata0[27],chdata1[27],chdata2[27];
 
 
-
-
 uint8_t countalarm;
 extern uint8_t sample_number;
 
@@ -259,7 +257,7 @@ void EXTI1_IRQHandler(void)
 						transBuff[5] = 0;
 						transBuff[6] = 0;
 						transBuff[7] = 0;
-						for (i=8;i<32;i++)	transBuff[i] = chdata2[i-5];
+						for (i=8;i<32;i++)	transBuff[i] = chdata2[i-5]; // 24 Bits Data - 3 Bit Register Ignored
 						for (i=32;i<56;i++)	transBuff[i] = chdata1[i-29];
 						for (i=56;i<80;i++)	transBuff[i] = chdata0[i-53];
 						CDC_Transmit_FS(transBuff, 80);
