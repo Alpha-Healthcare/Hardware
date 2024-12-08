@@ -1,0 +1,4 @@
+i2cdev.c:20:6:check_i2c_slaves_IT	8	static,ignoring_inline_asm
+i2cdev.c:51:9:check_i2c_slaves	16	static
+i2cdev.c:115:6:start_i2c_data	8	static,ignoring_inline_asm
+i2cdev.c:131:9:get_i2c_data	8	static

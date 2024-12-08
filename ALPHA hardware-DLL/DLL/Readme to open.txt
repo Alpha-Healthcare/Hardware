@@ -1,0 +1,3 @@
+- Install the last version of Visual Studio
+- Open Class1.cs as a DLL project in VS
+- Enjoy
